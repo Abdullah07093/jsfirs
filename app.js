@@ -86,7 +86,97 @@ function same(a){
 
 }
 console.log(same(212));
- 
+console.log("HomeWork 2");
+console.log();
+console.log("Task1");
+function modifyLast(a,b){
+    let log='';
+for (let index = 1; index < b; index++) {
+   log +=  a.slice(a.length - 1); 
+}
+return a+log;
+
+}
+console.log(modifyLast("hey", 6))
+console.log("Task2");
+
+function firstLast(n){
+
+   return n[0]+n.slice(-1);
+}
+console.log(firstLast("ganesh"));
+console.log("Task3");
+function toInt(n){
+return +n;
+}
+function toIntt(n){
+    return parseInt(n);
+    }
+function toStr(n){
+    return String(n);
+}
+console.log(toInt("77"));
+console.log(toIntt("77"));
+console.log(toStr(77));
+console.log("Task4");
+function isPlural(n){
+if (n.slice(-1)=="s") {
+    return true
+}else{
+    return false;
+}
+}
+console.log(isPlural("change"));
+console.log("Task5");
+function reverseCapitalize(n){
+    return n.split("").reverse().join("").toUpperCase();
+}
+console.log(reverseCapitalize("abc"));
+console.log("Task6");
+function checkEnding(a,b){
+return b+" "+a;
+}
+
+console.log(checkEnding("abc", "bc"));
+console.log("Task7");
+function checkPalindrome(n){
+    if (n==n.split("").reverse().join("")) {
+        return true;
+        
+    } else {
+        false;
+    } 
+}
+console.log(checkPalindrome("mom"));
+console.log("Task8");
+function charCount(a,b){
+
+    return b.split("").filter(i=>i==a).length;
+}
+console.log(charCount("a", "edabit"));
+
+
+console.log("Task9");
+
+function capToFront(a){
+let log='';
+for(let al of a){
+    if (al===al.toUpperCase()) {
+log +=  al; 
+
+} 
+}
+a = a.replace(/[A-Z]/g,'');
+return log+a;
+}
+console.log(capToFront("moveMENT"));
+
+console.log("Task10");
+function reverseAndNot(n){
+let b=n;
+console.log( Number( n.toString().split("").reverse().join("").concat(b)));
+}
+reverseAndNot(123)
 console.log("HomeWork 3");
 console.log("Task 1");
 
