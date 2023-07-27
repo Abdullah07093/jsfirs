@@ -86,7 +86,9 @@ function same(a){
 
 }
 console.log(same(212));
+
 console.log("HomeWork 2");
+
 console.log();
 console.log("Task1");
 function modifyLast(a,b){
@@ -257,3 +259,83 @@ console.log("Task 666");
 let arr=[0, 2,7, 4, 6];
 arr.sort().splice(arr.length-1);
 console.log(arr.reverse());
+
+console.log("HomeWork 4 Oject");
+console.log("TAsk1")
+let obj={
+  up:10,
+  down:1
+}
+function getVoteCount(obj){
+    return obj   // {up:10,down:1}
+}
+
+function getVoteCount(obj){
+    return obj.up-obj.down  // 10-1  -->9
+}
+console.log(getVoteCount({up:10,down:1}));
+console.log("TAsk2")
+// let obj1={
+//     windth:0,
+//     length:0,
+//     height:0
+// }
+
+
+function volumeOfBox(obj){
+    
+ 
+    return obj.width*obj.height*obj.length;
+}
+
+console.log(volumeOfBox({ width: 2, length: 5, height: 1 } ));
+console.log("TAsk3")
+
+function fiftyThirtyTwenty(a){
+    let obj={
+"Needs": a*0.5, "Wants": a*.3, "Savings": a*.2 
+    }
+    return obj;
+}
+
+console.log(fiftyThirtyTwenty(10000));
+console.log("TAsk4")
+function relationToLuke(a){
+    let obj={
+        "Darth Vader":"father",
+        "Leia":"sister",
+        "Han":"brother in low",
+        "R2D2":"droid"
+    }
+
+   
+    Object.entries(obj).forEach(([key, value]) => {
+        if (key==a) {
+            console.log(`Luke, I am your ${value}`); 
+        }
+  
+});
+ return "Luke, I am your "+obj.a;// чи гуна return-да броремша???
+
+}
+console.log(relationToLuke("Leia"));
+console.log("TAsk5")
+function cityFacts(obj){
+    return obj.name+" has a population of "+obj.population+" and is situated in "+obj.continent;
+
+}
+console.log(cityFacts(
+{ name: "Paris", population: "2,140,526", continent: "Europe"}
+));
+console.log("TAsk6")
+function totalAmountAdjectives(obj){
+   return  Object.keys(obj).length;
+
+}
+console.log(totalAmountAdjectives({ a: "idiot", b: "idiot", c: "idiot" }))
+
+console.log("TAsk7")
+function nSidedShape(){
+
+}
+console.log(nSidedShape(3) ➞ "triangle");
